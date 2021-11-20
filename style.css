@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.area {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+#tela {
+    border: 2px solid #000;
+    box-shadow: 0px 25px 20px #000;
+    background-color: #FFF;
+    cursor: crosshair;
+}
+
+.colorArea span{
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cores {
+    display: none;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    padding: 10px;
+    transition: all ease .5s;
+}
+
+.color {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.color.active {
+    border: 2px solid #FFF;
+}
+
+.borracha {
+    color:  #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    grid-column: 3/5;
+    border: 2px solid #fff;
+    cursor: pointer;
+    height: 20px;
+    width: 100%;
+    font-size: 13px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tamanho {
+    color:  #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 20px 20px);
+    margin-top: 20px;
+    grid-column: 1/7;
+}
+
+.menos {
+    user-select: none;
+    font-size: 25px;
+    cursor: pointer;
+    grid-column: 2/3;
+    transition: all ease 0.5s;
+}
+.menos:hover, .mais:hover {
+    font-size: 35px;
+}
+
+.mais {
+    user-select: none;
+    font-size: 25px;
+    cursor: pointer;
+    grid-column: 7/7;
+    transition: all ease 0.5s;
+}
+
+
+.canvas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clear {
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    padding: 10px;
+    margin-top: 35px;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 150px;
+}
+
+footer {
+    color: #FFF;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+footer a {
+    color: #3772ff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

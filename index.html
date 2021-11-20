@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="area">
+        <div class="colorArea">
+            <span onclick="abrirCores()">Cores / Ferramentas</span>
+            <div class="cores">
+                <div data-color="#000000" style="background-color: #000000" class="color active"></div>
+                <div data-color="#0000FF" style="background-color: #0000FF" class="color"></div>
+                <div data-color="#FF0000" style="background-color: #FF0000" class="color"></div>
+                <div data-color="#008000" style="background-color: #008000" class="color"></div>
+                <div data-color="#FFFF00" style="background-color: #FFFF00" class="color"></div>
+                <div data-color="#808080" style="background-color: #808080" class="color"></div>
+                <div data-color="#005f73" style="background-color: #005f73" class="color"></div>
+                <div data-color="#0a9396" style="background-color: #0a9396" class="color"></div>
+                <div data-color="#94d2bd" style="background-color: #94d2bd" class="color"></div>
+                <div data-color="#e9d8a6" style="background-color: #e9d8a6" class="color"></div>
+                <div data-color="#ee9b00" style="background-color: #ee9b00" class="color"></div>
+                <div data-color="#ca6702" style="background-color: #ca6702" class="color"></div>
+                <div data-color="#bb3e03" style="background-color: #bb3e03" class="color"></div>
+                <div data-color="#9b2226" style="background-color: #9b2226" class="color"></div>
+                <div data-color="#cb997e" style="background-color: #cb997e" class="color"></div>
+                <div data-color="#ddbea9" style="background-color: #ddbea9" class="color"></div>
+                <div data-color="#b7b7a4" style="background-color: #b7b7a4" class="color"></div>
+                <div data-color="#9ec1a3" style="background-color: #9ec1a3" class="color"></div>
+                <div data-color="#370617" style="background-color: #370617" class="color"></div>
+                <div data-color="#283618" style="background-color: #283618" class="color"></div>
+                <div data-color="#a0c4ff" style="background-color: #a0c4ff" class="color"></div>
+                <div data-color="#bdb2ff" style="background-color: #bdb2ff" class="color"></div>
+                <div data-color="#ffc6ff" style="background-color: #ffc6ff" class="color"></div>
+                <div data-color="#00f5d4" style="background-color: #00f5d4" class="color"></div>
+                <div data-color="#8338ec" style="background-color: #8338ec" class="color"></div>
+                <div data-color="#ff006e" style="background-color: #ff006e" class="color"></div>
+                <div data-color="#774936" style="background-color: #774936" class="color"></div>
+                <div data-color="#9fa0ff" style="background-color: #9fa0ff" class="color"></div>
+                <div data-color="#4a4e69" style="background-color: #4a4e69" class="color"></div>
+                <div data-color="#fec89a" style="background-color: #fec89a" class="color"></div>
+                <div data-color="#aacc00" style="background-color: #aacc00" class="color"></div>
+                <div data-color="#00296b" style="background-color: #00296b" class="color"></div>
+                <div data-color="#390099" style="background-color: #390099" class="color"></div>
+                <div data-color="#ffc857" style="background-color: #ffc857" class="color"></div>
+                <div data-color="#694f5d" style="background-color: #694f5d" class="color"></div>
+                <div data-color="#3772ff" style="background-color: #3772ff" class="color"></div>
+
+                <div data-color="#fff" class="borracha color">Borracha</div>
+                <div class="tamanho">
+                    <div class="menos">-</div>
+                    <div class="mais">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas">
+            <canvas id="tela" width="1200" height="600"></canvas>
+            <button class="clear">Limpar Quadro</button>
+        </div>
+    </div>
+    
+    <footer>Criado por <a href="https://github.com/FabioPenedo" target="_blank">Fábio Penedo</a></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
